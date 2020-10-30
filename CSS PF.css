@@ -4,11 +4,7 @@ body{
     height: 100vh;
     background-size: cover;
     background-image: url("./body.jpeg");
-}
-.imgPerfil{
-    width: 15rem;
-}
-article{
+}article{
     justify-content: space-around;
     width: 100vh 100vh;
     display: flex;
@@ -18,20 +14,54 @@ article{
     color: ivory;
     font-size: 2rem;
 }
-.direccion{
-    background-color: rgba(0, 0, 0, 0.185);
-    width: 100vh ;
-    height: 100vh ;
+.logo{
+    height: 15rem;
+    width: 38rem;
 }
-.contacto{
-    background-color: rgba(0, 0, 0, 0.185);
-    width: 100vh ;
-    height: 100vh ;
-
+.imgPerfil{
+    position: absolute;
+    width: 15rem;
+    animation-name: girar;
+    animation-duration: 2s;
+    transition: 2s;
+    animation-timing-function: linear;
+}
+@keyframes girar{
+    0%{
+        transform: rotate(0deg);
+        left: 2.5rem;
+    }
+    50%{
+        transform: rotate(180deg);
+        left: 25rem;
+    }
+    100%{
+        transform: rotate(0deg);
+        left: 2.5rem;        
+    }
 }
 header{
     margin: 0px 0px;
     padding: 1rem 1rem;
+}
+.ListDes{
+    margin-top: 5rem;
+    margin-right: 5rem;
+}
+.title{
+    background-color: #ffffff18;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6rem 0rem 1.6rem 1.6rem;
+    box-sizing: border-box;
+    height: 18rem;
+}
+footer{
+    display: flexbox;
+    text-align: center;
+    background-color: #000000;
+    -ms-flex-align: baseline;
+
 }
 .lista{
     text-decoration: none;
@@ -41,33 +71,35 @@ header{
     padding-left: 1rem;
     cursor: pointer;
 }
-a{
-    cursor: pointer;
-}
-.ListDes{
-    padding: 1.6rem 1.6rem 1.6rem 1.6rem;
-    height: 200px;
-}
-.title{
-    background-color: rgba(128, 128, 128, 0.137);
-    display: flex;
-    justify-content: space-between;
-    padding: 1.6rem 0rem 1.6rem 1.6rem;
-    box-sizing: border-box;
-}
-footer{
-    display: flexbox;
+.contactoDiv{
+    background-color: rgba(0, 0, 0, 0.185);
+    width: 45%;
     text-align: center;
-    color: #ffffff;
-    -ms-flex-align: baseline;
-
 }
-h1{
-    font-size: 3rem;
+.flex{
+    display: flex;
+}
+.mail{
+    text-align: initial;
+}
+.wpp{
+    background-color: #01e675;
+    border: 1;
+    border-radius: 8px;
     color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2rem;
+    -webkit-box-shadow: 10px 14px 11px -6px rgba(0,0,0,0.88);
+    -moz-box-shadow: 10px 14px 11px -6px rgba(0,0,0,0.88);
+    box-shadow: 10px 14px 11px -6px rgba(0,0,0,0.88);
+}
+.wpp :hover{
+    font-size: 3rem;
+}
+.direccion{
     background-color: #ffffff18;
-    padding: 1rem 1rem;
-    border-bottom: solid #ffffff30;
+    padding: 1rem;
 }
 .boton:hover {
     background-color: #a8a8a8;
@@ -85,10 +117,64 @@ h1{
     -moz-box-shadow: 10px 14px 11px -6px rgba(0,0,0,0.88);
     box-shadow: 10px 14px 11px -6px rgba(0,0,0,0.88);
   }
-  iframe{
-      margin-top: 1rem;
+.carrousel img{
+    width: 100vh;
+    padding-left: 25%;
+    padding-right: 25%;
+    align-content: center;
+    height: 30rem;
   }
-p{
+.carrousel{
+    background-color: #000000d3;
+    height: 30rem;
+  }
+.cambio{
+      animation-name: pasaje;
+      animation-duration: 3s;
+  }
+@keyframes pasaje{
+      0%{opacity: 0;}
+      25%{opacity: 1;}
+      50%{opacity: 1;}
+      75%{opacity: 1;}
+      100%{opacity: 0;}
+  }
+.galeriaDiv{
+      padding-left: 5rem;
+      width: 100%;
+  }
+.galeria{
+      width: 25%;
+      margin: 1rem;
+  }
+.galeriaTitulo{
+    background-color: #ffffff18;
+    text-align: center;
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+    padding: 1rem 1rem;
+    border-bottom: solid #ffffff30;
+}
+a{
+    text-decoration:  none;
+    color: #ffffff;
+    cursor: pointer;
+}p{
     font-family: 'Google Sans';
     font-style: normal;
+    text-align: center;
+    color: ivory;
+    font-size: 2rem;
   }
+h1{
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: #ffffff18;
+    padding: 1rem 1rem;
+    border-bottom: solid #ffffff30;
+}
