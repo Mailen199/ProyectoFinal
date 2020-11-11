@@ -15,10 +15,6 @@ function cerrarMapa(){
     abrir.hidden=false;
 
 }
-function ponerFoco(){
-    var sobreFoxy = document.getElementById("articuloFoxy");
-    sobreFoxy.focus();
-}
 setInterval(cambiarImagen,3000);
 var foto=1;
 function cambiarImagen(){

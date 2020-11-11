@@ -33,8 +33,15 @@
                         <p>¡Mandanos tu consulta o pedí tu turno!</p>
                         <p>Dejanos tu mensaje que nos comunicaremos lo más pronto posible.</p>
                         <div class="mails">
-                        <p>Dirección de correo electrónico</p>
-                        <input type="text" name="mail" id="inpMail" size=30 placeholder="example@gmail.com">
+                        <form>
+                            <label for="Nombre">Nombre</label> <br>
+                        <input type="text" name="Nombre" id="inpNom" size="30" placeholder="Nombre" class="inputContacto"><br>
+                            <label for="mail">Mail</label> <br>
+                        <input type="email" name="mail" id="inpMail" size="30" placeholder="example@gmail.com" class="inputContacto"><br>
+                            <label for="cajaDeTexto">Ingrese su consulta</label> <br>
+                        <input type="text" name="cajaDeTexto" id="cajaDeTexto" size="30" class="inputContacto"> <br>
+                        <input type="submit" class="boton"><input type="reset" class="boton">
+                        </form>
                         </div>
                     </div>
                     <div class="contactoDiv">
