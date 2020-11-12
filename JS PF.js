@@ -57,3 +57,37 @@ function cambiarImagen(){
     }
     
 }
+setInterval(slider,3000);
+var fotos=1;
+function slider(){
+    if(fotos===1){
+        document.getElementById("guille1").hidden = true;
+        document.getElementById("guille2").hidden = false;
+        fotos++;
+    }else if(fotos===2){
+        document.getElementById("guille2").hidden = true;
+        document.getElementById("guille3").hidden = false;
+        fotos++;
+    }else if(fotos===3){
+        document.getElementById("guille3").hidden = true;
+        document.getElementById("guille4").hidden = false;
+        fotos++;
+    }else if(fotos===4){
+        document.getElementById("guille4").hidden = true;
+        document.getElementById("guille5").hidden = false;
+        fotos++;
+    }else if(fotos===5){
+        document.getElementById("guille5").hidden = true;
+        document.getElementById("guille6").hidden = false;
+        fotos++;
+    }else if(fotos===6){
+        document.getElementById("guille6").hidden = true;
+        document.getElementById("guille7").hidden = false;
+        fotos++;
+    }else if(fotos===7){
+        document.getElementById("guille7").hidden = true;
+        document.getElementById("guille1").hidden = false;
+        fotos=1;
+    }
+    
+}
